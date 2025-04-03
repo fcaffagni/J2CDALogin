@@ -1,4 +1,6 @@
-﻿namespace J2CDALogin
+﻿using Microsoft.Maui.Controls;
+
+namespace J2CDALogin
 {
     public partial class App : Application
     {
@@ -9,7 +11,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            Window window = new Window(new AppShell());
+            Window window = new Window(new Login()); // new Window(new AppShell());
             window.Width = 400;
             window.Height = 600;
             return window;
